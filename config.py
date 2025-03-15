@@ -2,7 +2,7 @@ import os
 
 # Bot tokens (set these in your environment variables)
 BOT1_TOKEN = os.environ["BOT1_TOKEN"]
-BOT2_TOKEN = os.environ["BOT2_TOKEN"]
+#BOT2_TOKEN = os.environ["BOT2_TOKEN"]
 
 # Admin IDs as a list of integers (comma-separated string in environment variable)
 ADMIN1_IDS = [int(admin_id.strip()) for admin_id in os.environ.get("ADMIN1_IDS", "").split(",") if admin_id.strip()]
