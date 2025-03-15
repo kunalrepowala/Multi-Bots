@@ -24,7 +24,7 @@ from config import BOT1_TOKEN, ADMIN1_IDS, MONGO_URI1, MONGO_DB_NAME1
 # Bot configuration
 
 
-mongo_client = pymongo.MongoClient(MONGO_URI1)
+mongo_client = AsyncIOMotorClient(MONGO_URI1)
 db = mongo_client[MONGO_DB_NAME1]
 # You can change the database name if needed
 websites_collection = db["websites"]  # Collection to store website URLs
