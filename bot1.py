@@ -26,7 +26,7 @@ from config import BOT1_TOKEN, ADMIN1_IDS, MONGO_URI1, MONGO_DB_NAME1
 
 mongo_client = pymongo.MongoClient(MONGO_URI1)
 db = mongo_client[MONGO_DB_NAME1]
-db = mongo_client["websiteDB"]  # You can change the database name if needed
+# You can change the database name if needed
 websites_collection = db["websites"]  # Collection to store website URLs
 
 # In-memory dictionary to store website status info (ephemeral)
